@@ -1,2 +1,3 @@
 # boom-docker
-Boom (github.com/rakyll/boom) inside a docker container
+
+[`boom`](https://github.com/rakyll/boom) inside a docker container.
