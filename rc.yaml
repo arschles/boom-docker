@@ -15,4 +15,4 @@ spec:
         - name: megaboom
           image: quay.io/arschles/boom:0.1.0
           imagePullPolicy: IfNotPresent
-          command: ["boom", "-n", "10000", "-c", "100", "http://foo.devart.io"]
+          command: ["boom", "-n", "10000", "-c", "100", "http://kubehttpbin.org/get"]
