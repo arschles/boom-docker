@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: megaboom
+spec:
+  replicas: 1
+  selector:
+    app: megaboom
+  template:
+    metadata:
+      labels:
+        app: megaboom
+    spec:
+      containers:
+        - name: megaboom
+          image: quay.io/arschles/boom:0.1.0
+          imagePullPolicy: IfNotPresent
+          command: ["boom", "-n", "10000", "-c", "100", "http://foo.devart.io"]
